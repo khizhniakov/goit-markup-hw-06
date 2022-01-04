@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+    <!-- header -->
     <header class="header">
 
         <!--navigation-->
@@ -59,10 +59,10 @@
         </div>
 
     </header>
-
+    <!-- main -->
     <main>
 
-        <!--button-->
+        <!--hero-->
 
         <section class="hero">
 
@@ -127,6 +127,7 @@
                 </ul>
             </div>
         </section>
+
         <!--photo in office-->
         <section class="work section">
 
@@ -159,6 +160,7 @@
             </div>
 
         </section>
+
         <!--our team-->
         <section class="team section">
 
@@ -392,7 +394,7 @@
         </section>
 
     </main>
-
+    <!-- footer -->
     <footer class="footer">
         <section class="container for-footer">
             <div class="container-adress">
@@ -412,6 +414,7 @@
             </div>
 
             <div class="container-social">
+
                 <span class="footer-text">присоединяйтесь</span>
                 <ul class="footer social-links">
                     <li class="social-item">
@@ -445,22 +448,73 @@
                 </ul>
             </div>
 
+            <div class="container-email">
+                <span class="footer-text">Подпишитесь на рассылку</span>
+                <form class="footer-email">
+                    <label for="email">
+                        <input class="email-box" type="email" id="email" name="email" placeholder="E-mail">
+                    </label>
+                    <button type="submit" class="footer-submit-btn">Подписаться</button>
+                </form>
+
+            </div>
+
+
         </section>
     </footer>
-
     <!-- Modal window -->
     <div class="backdpor is-hidden" data-modal>
         <div class="modal">
-            <p>
-            </p>
             <button class="close-modal" data-modal-close>
                 <svg class="icon-cross" width="11" height="11">
                     <use href="./images/modal-svg/symbol-defs.svg#icon-cross"></use>
                 </svg>
             </button>
+            <b class="modal-headline">Оставьте свои данные, мы вам перезвоним</b>
+            <form class="modal-form">
+                <label class="form-input-box">
+                    Имя
+                    <input type="text" name="user-name" class="form-input" required>
+                    <svg class="form-input-icon">
+                        <use href='/images/modal-svg/symbol-defs.svg#icon-person-name'></use>
+                    </svg>
+                </label>
+
+                <label class="form-input-box">
+                    Телефон
+                    <input type="tel" name="" class="form-input" pattern="[0-9]{10}" title="0500505050" required>
+                    <svg class="form-input-icon">
+                        <use href='/images/modal-svg/symbol-defs.svg#icon-call'></use>
+                    </svg>
+                </label>
+
+                <label class="form-input-box">
+                    Почта
+                    <input type="email" name="" class="form-input">
+                    <svg class="form-input-icon">
+                        <use href='./images/modal-svg/symbol-defs.svg#icon-massage'></use>
+                    </svg>
+                </label>
+
+                <div class="message-box">
+                    <textarea name="user-msg" class="form-message"></textarea>
+                    <label class="textarea-label">
+                        Комментарий
+                    </label>
+                </div>
+
+
+                <label for="checkbox" class="check-text">Соглашаюсь с рассылкой и принимаю <a href="#">Условия
+                        договора</a>
+                    <input class="checkbox" type="checkbox" name="checkbox" id="checkbox">
+                    <span class="checkbox-check"></span>
+                </label>
+                <button type="submit" class="form-submit-btn">Отправить</button>
+            </form>
+
         </div>
     </div>
-    <!-- end modal window -->
+    <!-- script -->
     <script src="./js/modal.js"></script>
 </body>
 
